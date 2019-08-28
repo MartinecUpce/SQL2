@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1309BE5-4F16-4078-AB57-96FB5C442D5C" name="STUDIJNI_OBOR">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>AEEBE053-E4BE-2A81-6501-DAB44F8A1B4E</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Obor" id="9DA3DF15-567B-8D12-856C-5CB739EA12EE">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>05C1F34E-5980-1478-D10A-E8A8630CA3D9</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Odhadovany_Pocet" id="33695EF7-A346-4324-2519-6127EEC87798">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>EC11492F-E481-79E5-E2E7-2E16F1FF670B</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KATEDRA_Id_Katedry" id="78AC548E-126D-5FEE-CED5-E6A2B749B961">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>A05DA6D4-B2FE-347C-86AC-AD1AEB1330EB</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8462AA82-EC62-0A0D-5DBF-8A5F9380A306" referredColumn="AA69DAF7-EEAF-FF93-C745-F0B1E591920F"/>
+</associations>
+</Column>
+<Column name="FORMA_VYUKY_Id_Formy" id="6071B0A7-0B12-8B81-B142-FF5A6B2FC99A">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>5B768337-85B2-AC84-41B9-1F62874DF804</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38AFD143-492F-28FA-07CC-A40A6114019E" referredColumn="9F9FECBB-4BDD-251B-A10D-19123115BCB0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38C011CE-DDD9-49CE-A9D0-91E0D63089ED" name="STUDIJNI_OBOR_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>C27CA433-027A-4331-C70B-8F4738FAE192</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DA3DF15-567B-8D12-856C-5CB739EA12EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AF36C1D-C568-80FD-6F10-7D68C13151A3" name="STUDIJNI_OBOR_FORMA_VYUKY_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>C3F8AFAC-E441-2A64-FEC7-ED50069D4E60</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6071B0A7-0B12-8B81-B142-FF5A6B2FC99A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97E43D58-7887-3BC0-2B23-C230D6F4941C" name="STUDIJNI_OBOR_KATEDRA_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>710B12C8-3A13-713E-2286-0638FA39095F</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78AC548E-126D-5FEE-CED5-E6A2B749B961"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

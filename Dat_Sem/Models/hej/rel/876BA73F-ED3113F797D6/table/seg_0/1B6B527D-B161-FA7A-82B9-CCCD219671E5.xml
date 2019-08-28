@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B6B527D-B161-FA7A-82B9-CCCD219671E5" name="FORMA_VYUKY">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>45E47464-10BE-9215-3F0A-EE817A57E4AA</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Formy" id="9F9FECBB-4BDD-251B-A10D-19123115BCB0">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>D0B4B118-3145-01DC-74C6-90696EFDA03D</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazev" id="A0F2844C-969E-E7A8-1124-019C41223040">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>1665099A-FAF7-32D6-7FF3-CB4965BB6591</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87B7F0A0-C883-9B3E-E893-3F829E443170" name="FORMA_VYUKY_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>F3A2D266-FF73-3764-320D-995A34ED0CFA</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F9FECBB-4BDD-251B-A10D-19123115BCB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

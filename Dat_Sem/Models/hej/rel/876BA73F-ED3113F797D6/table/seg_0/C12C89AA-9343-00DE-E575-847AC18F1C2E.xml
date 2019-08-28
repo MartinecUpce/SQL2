@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C12C89AA-9343-00DE-E575-847AC18F1C2E" name="PREDMET">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>AFBBC400-24E1-D113-11A0-6038A4A808A5</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Predmet" id="62F548B6-6B12-958F-DE59-57A58B1B9BA2">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>55E22509-F16E-2597-1870-AF998CE6038F</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazev" id="0E2CEE30-96C3-E23D-48EA-A5ECF514282A">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>93D92688-E9F0-74A8-47BD-A20D019B1639</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Doporuceny_Rocnik" id="C102B34B-62E4-CC51-B1E7-9E6BAFC244F2">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>A5FDCC75-D19B-DD8B-D8AE-E89329A15298</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pocet_Studentu" id="672B9ED1-E88E-981F-16B5-78488767B4D1">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>2436EB4D-92B6-929C-4B75-6CB1AC7D1AE4</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZPUSOB_ZAKONCENI_Id_Zakonceni" id="A759BA1D-8F32-59D3-97C6-011D56ECBABC">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>41C0DF58-31DC-DBCB-16DD-E986BA8555C3</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EEFB509-7380-CCDF-8261-7BAD27C35CE7" referredColumn="C345DC4F-8C8A-9188-627E-BD0C3BEFDC1A"/>
+</associations>
+</Column>
+<Column name="SEMESTR_Id_Semestru" id="3C170823-3E7C-ECED-E9EB-15DDA22D75F2">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>17FD54EA-37FD-A58F-DC90-50918C1F17EF</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAF6781B-3BB2-7326-EF03-F3B2704A7D05" referredColumn="0341C084-9D6C-96C3-1FB1-4B6C606C89EB"/>
+</associations>
+</Column>
+<Column name="zkratka" id="978F7ABF-9F20-FBA0-019D-0E1D8B8851F5">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>8A200D0D-08D3-372B-FCC8-86595266D279</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3F90EB0-046E-E2B0-881A-A3C82F8A79E7" name="PREDMET_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>873F6F34-5880-A1E6-2303-D81077D3365F</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62F548B6-6B12-958F-DE59-57A58B1B9BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74DC8E7C-3D9F-2FC5-F622-68174955A497" name="PREDMET_ZPUSOB_ZAKONCENI_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>3834F551-7C9A-ABA4-31F9-D5B2E4CBD03E</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A759BA1D-8F32-59D3-97C6-011D56ECBABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1DBBD78-EEFA-B84F-9FD4-03756695876C" name="PREDMET_SEMESTR_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>8C217F80-5AF0-3642-BEAE-22631FF6EED5</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C170823-3E7C-ECED-E9EB-15DDA22D75F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

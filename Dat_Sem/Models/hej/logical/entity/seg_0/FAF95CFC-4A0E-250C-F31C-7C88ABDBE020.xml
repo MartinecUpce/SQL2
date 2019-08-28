@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAF95CFC-4A0E-250C-F31C-7C88ABDBE020" name="ZPUSOB_ZAKONCENI">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:21:47 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Zakonceni" id="E8FD3C7D-040D-5BE2-7A7F-B60C77E35152">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:22:02 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazev" id="12AF6581-D249-B7CA-D015-050DE79C9666">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:22:32 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D05367C-FFA0-FC05-47C2-02BD1D1E04FF" name="ZPUSOB_ZAKONCENI PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:22:14 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E8FD3C7D-040D-5BE2-7A7F-B60C77E35152</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

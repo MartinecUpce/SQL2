@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="idase_projekt.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="466.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Vyucujici">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableVyucujici" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="746.0" AnchorPane.bottomAnchor="249.20000000000005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="columnWorkplace" prefWidth="72.00000303983688" text="Pracoviste" />
+                            <TableColumn fx:id="columnJmenoVyucujiciho" prefWidth="115.20001220703125" text="Jmeno" />
+                              <TableColumn fx:id="columnPrijmeniVyucujiciho" prefWidth="84.80003356933594" text="Prijmeni" />
+                              <TableColumn fx:id="columnTitulPred" prefWidth="68.0" text="Titul Pred" />
+                              <TableColumn fx:id="columnTitulZa" prefWidth="62.4000244140625" text="Titul Za" />
+                              <TableColumn fx:id="columnMobil" prefWidth="109.60003662109375" text="Mobil" />
+                              <TableColumn fx:id="columnTelefon" prefWidth="94.4000244140625" text="Telefon" />
+                              <TableColumn fx:id="columnEmail" prefWidth="63.20001220703125" text="Email" />
+                              <TableColumn fx:id="columnIDUciteleK" prefWidth="69.60006103515627" text="ID_UCI" />
+                          </columns>
+                        </TableView>
+                        <GridPane layoutY="292.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="247.0" prefWidth="386.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.4000244140625" minWidth="10.0" prefWidth="109.80001831054688" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.1999816894531" minWidth="10.0" prefWidth="276.1999816894531" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="77.599951171875" minHeight="10.0" prefHeight="25.59998168945313" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="152.8000244140625" minHeight="10.0" prefHeight="89.6" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="113.4" minHeight="10.0" prefHeight="113.4" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ComboBox fx:id="choicePracoviste" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <Label text="Pracoviste" />
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="buttonVlozUcitele" mnemonicParsing="false" onAction="#vlozUcitele" text="Vloz Ucitele" />
+                                    <Button fx:id="buttonVymazUcitele" mnemonicParsing="false" onAction="#vymazUcitele" text="VymazUcitele" GridPane.rowIndex="2" />
+                                    <Button fx:id="buttonUpravUcitele" mnemonicParsing="false" onAction="#upravUcitele" text="Uprav Ucitele" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Jmeno" />
+                                    <Label text="Prijmeni" GridPane.rowIndex="1" />
+                                    <Label text="Email" GridPane.rowIndex="2" />
+                                    <TextField fx:id="textJmenoVyucujiciho" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textPrijmeniVyucujiciho" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Titul Pred" />
+                                    <Label text="Titul Za" GridPane.rowIndex="1" />
+                                    <Label text="Mobil" GridPane.rowIndex="3" />
+                                    <Label text="Telefon" GridPane.rowIndex="2" />
+                                    <TextField fx:id="textTitulPred" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textTitulZa" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textTelefon" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="textMobil" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Pracoviste">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablePracoviste" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="746.0" AnchorPane.bottomAnchor="287.20000000000005" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="columnFakulta" prefWidth="140.80005186796188" text="Fakulta" />
+                            <TableColumn fx:id="columnFZkratka" prefWidth="103.20001220703125" text="F. Zkratka" />
+                              <TableColumn fx:id="columnKatedra" prefWidth="99.19999694824219" text="Katedra" />
+                              <TableColumn fx:id="columnKZkratka" prefWidth="116.800048828125" text="K. Zkratka" />
+                              <TableColumn fx:id="columnFakID" prefWidth="67.20001220703125" text="F. ID" />
+                              <TableColumn fx:id="columnKatID" prefWidth="96.79998779296875" text="K. ID" />
+                          </columns>
+                        </TableView>
+                        <GridPane layoutY="252.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="284.0" prefWidth="432.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane prefHeight="128.0" prefWidth="144.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="buttonPridejFakultu" mnemonicParsing="false" onAction="#pridejFakultu" prefHeight="26.0" prefWidth="103.0" text="Pridej Fakultu" />
+                                    <Button fx:id="buttonOdeberFakultu" mnemonicParsing="false" onAction="#odeberFakultu" prefHeight="26.0" prefWidth="103.0" text="Odeber Fakultu" GridPane.rowIndex="1" />
+                                    <Button fx:id="buttonOdeberFakultu" mnemonicParsing="false" onAction="#upravFakultu" prefHeight="26.0" prefWidth="102.0" text="Uprav Fakultu" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Fakulta" />
+                                    <Label text="Fak. Zkratka" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textFakultaName" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textFakultaZkratka" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" GridPane.columnIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="buttonPridejKatedru" mnemonicParsing="false" onAction="#pridejKatedru" text="Pridej Katedru" />
+                                    <Button fx:id="buttonOdeberKatedru" mnemonicParsing="false" onAction="#odeberKatedru" text="Odeber Katedru" GridPane.rowIndex="1" />
+                                    <Button fx:id="buttonUpravKatedru" mnemonicParsing="false" onAction="#upravKatedru" text="Uprav Katedru" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane prefHeight="182.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <GridPane GridPane.rowIndex="1">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Katedra" />
+                                          <Label text="K. Zkratka" GridPane.rowIndex="1" />
+                                          <TextField fx:id="textKatedraName" prefWidth="87.0" GridPane.columnIndex="1" />
+                                          <TextField fx:id="textKatedraZkratka" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <ComboBox fx:id="choiceFakulta" prefWidth="150.0" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Predmet">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabulkaPredmet" layoutY="-2.0" prefHeight="282.0" prefWidth="746.0" AnchorPane.bottomAnchor="258.80000000000007" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                          <columns>
+                            <TableColumn fx:id="columnNazevPredmetu" prefWidth="75.0" text="Nazev" />
+                            <TableColumn fx:id="columnZkratkaPredmetu" prefWidth="75.0" text="Zkratka" />
+                              <TableColumn fx:id="columnVyucovanySem" prefWidth="137.5999755859375" text="Vyucovany Semestr" />
+                              <TableColumn fx:id="columnZakonceni" prefWidth="75.0" text="Zakonceni" />
+                              <TableColumn fx:id="columnDoporucenyRocnik" prefWidth="188.80002441406248" text="Doporuceny Rocnik" />
+                              <TableColumn fx:id="columnIDPredmetu" prefWidth="75.0" text="ID" />
+                          </columns>
+                        </TableView>
+                        <GridPane layoutY="283.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="258.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.20001220703125" minWidth="10.0" prefWidth="102.4" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.20000000000005" minWidth="10.0" prefWidth="287.20000000000005" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="134.799959564209" minHeight="10.0" prefHeight="108.39999618530274" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="162.39996948242188" minHeight="10.0" prefHeight="80.3999755859375" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="127.19998779296878" minHeight="10.0" prefHeight="63.60002441406252" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane prefHeight="130.0" prefWidth="106.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="buttonVytvorPredmet" mnemonicParsing="false" onAction="#vytvorPredmet" text="Vytvor Predmet" />
+                                    <Button fx:id="buttonVymazPredmet" mnemonicParsing="false" onAction="#zrusPredmet" text="Vymaz Predmet" GridPane.rowIndex="1" />
+                                    <Button fx:id="buttonUpravPredmet" mnemonicParsing="false" onAction="#upravPredmet" text="Uprav Predmet" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane prefHeight="98.0" prefWidth="288.0" GridPane.columnIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.4000244140625" minWidth="10.0" prefWidth="78.59997863769532" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.20001220703125" minWidth="10.0" prefWidth="92.2000213623047" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="textNazevPredmet" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textZkratkaPredmet" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textDopRocnik" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="Nazev" />
+                                    <Label text="Zkratka" GridPane.rowIndex="1" />
+                                    <Label text="Doporuceny Rocnik" GridPane.rowIndex="3" />
+                                    <Label text="pocet" GridPane.rowIndex="2" />
+                                    <TextField fx:id="textStudentuP" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ChoiceBox fx:id="choiceZakonceni" prefWidth="150.0" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="choiceVyucovanySemestr" prefWidth="150.0" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Zakonceni" GridPane.rowIndex="1" />
+                                    <Label text="Vyucovany Semestr" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ComboBox fx:id="choiceVypisPredmety" onAction="#vypisUdajePredmetu" prefWidth="150.0" />
+                                    <Label text="Rozsah Hodin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textVypisRozsah" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="typCviceni" onAction="#vypisUdajePredmetu" prefWidth="150.0" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Obor">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.32576321667907665" orientation="VERTICAL" prefHeight="542.0" prefWidth="745.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane prefHeight="266.0" prefWidth="745.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TableView fx:id="tabulkaObor" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="columnOborZkratka" prefWidth="167.2000274658203" text="Zkratka" />
+                                                      <TableColumn fx:id="columnOborKatedra" prefWidth="137.5999755859375" text="Katedra" />
+                                                      <TableColumn fx:id="columnFormaVyuky" prefWidth="184.0" text="Forma Vyuky" />
+                                                      <TableColumn fx:id="columnCelkovyPocetStudentu" prefWidth="155.99993896484375" text="PocetStudentu" />
+                                                      <TableColumn fx:id="columnIDObor" prefWidth="75.0" text="ID" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="237.0" prefWidth="744.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.46511627906976744" orientation="VERTICAL" prefHeight="363.0" prefWidth="745.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView fx:id="tabulkaOborPredmet" layoutY="-18.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="columnOborPredmetTa" prefWidth="158.40005189180374" text="Predmet" />
+                                                    <TableColumn fx:id="columnKategorie" minWidth="0.0" prefWidth="195.9999542236328" text="Kategorie" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <GridPane layoutY="4.0" prefHeight="185.0" prefWidth="410.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.199951171875" minWidth="10.0" prefWidth="85.79998779296875" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.4000244140625" minWidth="10.0" prefWidth="324.20001220703125" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="99.20005264282227" minHeight="10.0" prefHeight="84.00004043579102" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <GridPane prefHeight="95.0" prefWidth="161.0">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="buttonVytvorObor" mnemonicParsing="false" onAction="#vytvorObor" text="Vytvor Obor" />
+                                                            <Button fx:id="buttonZrusObor" mnemonicParsing="false" onAction="#zrusObor" text="Zrus Obor" GridPane.rowIndex="1" />
+                                                            <Button fx:id="buttonUpravObor" mnemonicParsing="false" onAction="#upravObor" text="Uprav Obor" GridPane.rowIndex="2" />
+                                                         </children>
+                                                      </GridPane>
+                                                      <GridPane GridPane.columnIndex="1">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Label text="Zkratka" />
+                                                            <Label text="Katedra" GridPane.rowIndex="1" />
+                                                            <Label text="Forma Vyuky" GridPane.rowIndex="2" />
+                                                            <TextField fx:id="textZkratkaOboru" GridPane.columnIndex="1" />
+                                                            <ComboBox fx:id="choiceKatedraOboru" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <ComboBox fx:id="choiceFormaVyuky" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                         </children>
+                                                      </GridPane>
+                                                      <GridPane GridPane.rowIndex="1">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Button fx:id="buttonVlozPredObor" mnemonicParsing="false" onAction="#vlozPdoOboru" text="Vloz Predmet" />
+                                                            <Button fx:id="buttonOdeberZOboru" mnemonicParsing="false" onAction="#odeberPzOboru" text="Odeber Predmet" GridPane.rowIndex="1" />
+                                                         </children>
+                                                      </GridPane>
+                                                      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Label text="Kategorie" />
+                                                            <Label text="Predmet" GridPane.rowIndex="2" />
+                                                            <Label text="Obor" GridPane.rowIndex="1" />
+                                                            <ComboBox fx:id="choiceKategorie" prefWidth="150.0" GridPane.columnIndex="1" />
+                                                            <ComboBox fx:id="choiceOborProPredmet" onAction="#zobrazTabulyPredmetuOboru" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <ComboBox fx:id="choicePredmetDoOboru" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Hodina">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableAkce" prefHeight="239.0" prefWidth="746.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="columnAkceJmeno" prefWidth="75.0" text="Jmeno" />
+                            <TableColumn fx:id="columnAkcePrijmeni" prefWidth="75.0" text="Prijmeni" />
+                              <TableColumn fx:id="columnUciteleAkceID" prefWidth="75.0" text="ID ucitele" />
+                              <TableColumn fx:id="columnIDAkce" prefWidth="75.0" text="ID Akce" />
+                              <TableColumn fx:id="columnOd" prefWidth="75.0" text="Od" />
+                              <TableColumn fx:id="columnDo" prefWidth="75.0" text="Do" />
+                              <TableColumn fx:id="columnHodinovyFont" prefWidth="125.60003662109375" text="Celkem hodin" />
+                              <TableColumn fx:id="columnTypAkce" prefWidth="162.4000244140625" text="Typ Akce" />
+                          </columns>
+                        </TableView>
+                        <GridPane layoutY="239.0" prefHeight="300.0" prefWidth="381.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.5999755859375" minWidth="10.0" prefWidth="84.5999755859375" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.4000244140625" minWidth="10.0" prefWidth="297.4000244140625" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="155.199951171875" minHeight="10.0" prefHeight="155.199951171875" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="95.60001220703126" minHeight="10.0" prefHeight="68.800048828125" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="buttonVytvorAkci" mnemonicParsing="false" onAction="#vytvorAkci" text="Vytvor Akci" />
+                                    <Button fx:id="buttonZrusAkci" mnemonicParsing="false" onAction="#zrusAkci" text="Zrus Akci" GridPane.rowIndex="1" />
+                                    <Button fx:id="buttonZmenAkci" mnemonicParsing="false" onAction="#zmenAkci" text="Zmen Akci" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="od" />
+                                    <Label text="do" GridPane.rowIndex="1" />
+                                    <Label text="typ akce" GridPane.rowIndex="4" />
+                                    <Label text="celkem" GridPane.rowIndex="3" />
+                                    <TextField fx:id="textOd" GridPane.columnIndex="1" />
+                                    <TextField fx:id="textDo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="textCelkemHodinAkce" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="choiceTypAkce" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="ID Ucitele" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="choiceUciteleID" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <ComboBox fx:id="vyberSiPredmet" prefWidth="150.0" promptText="Predmet" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="textDen" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Den" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

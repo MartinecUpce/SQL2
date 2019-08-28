@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38AFD143-492F-28FA-07CC-A40A6114019E" containerWithKeyObject="F1309BE5-4F16-4078-AB57-96FB5C442D5C" localFKIndex="5AF36C1D-C568-80FD-6F10-7D68C13151A3" name="STUDIJNI_OBOR_FORMA_VYUKY_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>C3F8AFAC-E441-2A64-FEC7-ED50069D4E60</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<referredTableLongName>FORMA_VYUKY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B6B527D-B161-FA7A-82B9-CCCD219671E5</referredTableID>
+<keyObject>87B7F0A0-C883-9B3E-E893-3F829E443170</keyObject>
+<referredKeyID>87B7F0A0-C883-9B3E-E893-3F829E443170</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Formy</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

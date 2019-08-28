@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1C1A301-73C0-2756-D862-2378B83F0DD7" name="FAKULTA">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-04-21 13:16:17 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Fakulta" id="004A9B54-1C3B-821E-E2A8-C05ACC721310">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-04-21 13:47:52 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazev" id="8E0D4F27-F633-31F2-78F7-946EC034F9CD">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-04-21 13:48:08 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Zkratka" id="B429CAD0-04E7-9EBA-8C99-56F563714821">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 11:59:42 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F07DC899-3B74-FF2F-8CD3-7385549726F9" name="PRACOVISTE PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-04-21 13:47:54 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>004A9B54-1C3B-821E-E2A8-C05ACC721310</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Idase_Projekt.jnlp">
+  <information>
+    <title>Idase_Projekt</title>
+    <vendor>Vojta</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Idase_Projekt.jar" size="28870" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="4036249" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Idase_Projekt" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="idase_projekt.Idase_Projekt"  name="Idase_Projekt" />
+  <update check="always"/>
+</jnlp>

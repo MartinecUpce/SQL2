@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E3DB18A-4A4B-DA40-81FD-06CE3EB1660E" name="VYUCUJICI">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>6DE7E6A3-D2D1-5899-B7C6-A02D7CA52DD4</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Ucitele" id="C5F78D0E-FF59-4F48-7C88-11969FC3B046">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>5791AB52-6CB3-7D73-B5B2-C7DF5F927C03</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jmeno" id="8831C772-2C54-6CD6-853E-481925ED7EB8">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>03736E34-D245-3748-6750-9AAF5CD93161</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prijmeni" id="6706B1BB-E8E0-1E05-7078-1C41A8DCD176">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>9418376C-2F38-0550-9BFF-4C3D759886BA</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Titul_Pred" id="63E023A8-BE70-596E-EEE7-99C89228226C">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>1442BB3C-3059-87EC-321D-9AB4E63840BD</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Titul_Za" id="C44539A6-3BF9-67B6-213F-4B833658C00B">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>0D0F76F7-84B7-62F7-9360-3F72BCD7833D</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="BD501C29-E7B1-00FC-A904-33962028DC45">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>C42F08FF-D438-5A3A-659E-D61142A1807A</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mobil" id="4A888C38-9759-CEE8-F0BE-3C2156262229">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>8E1EBAC0-A255-EA83-0758-7E3E46A92155</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E-mail" id="D5AC6171-50BC-2D2B-23F0-9EC20B207FC1">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>D1121C2A-BCEB-C4D4-B30D-7B1612B7BEEF</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KATEDRA_Id_Katedry" id="625400F7-F473-B231-B9E2-7C78E9D3D75F">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>86F1B9EE-80B0-0A24-C2A3-8BDA57C9EFF5</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01008E54-69FD-578D-E8E3-637A932DFABA" referredColumn="AA69DAF7-EEAF-FF93-C745-F0B1E591920F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B896527-245E-FD64-3C52-F9633F72F106" name="VYUCUJICI_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>6F8AF2BC-CD1C-A789-AEE7-B369F95D9E79</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5F78D0E-FF59-4F48-7C88-11969FC3B046"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B13A6621-F1A0-08C8-83E9-1254423DC161" name="VYUCUJICI_KATEDRA_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>3E16250C-A429-79AB-354C-67FF62FEDCF4</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="625400F7-F473-B231-B9E2-7C78E9D3D75F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

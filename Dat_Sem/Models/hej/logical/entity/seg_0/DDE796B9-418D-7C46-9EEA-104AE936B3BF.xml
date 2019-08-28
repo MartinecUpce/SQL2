@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDE796B9-418D-7C46-9EEA-104AE936B3BF" name="KATEDRA">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:59:06 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Katedry" id="A1B4A614-A498-ACBB-A2FE-1FEAD84FDB38">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:59:16 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Zkratka" id="503F97DE-2EC9-11CF-1EC4-9267D9C3144A">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 11:59:01 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazev" id="6C2BCAE2-EB37-70B5-684A-A4426D000B8D">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:59:49 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Fakulta" id="DE4E014B-C0FC-B99F-21FF-2912454C64A3">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:19:37 UTC</createdTime>
+<generatorID>432453EA-468D-BBDB-3F8D-8E4A38808CBF</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>004A9B54-1C3B-821E-E2A8-C05ACC721310</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77D1D30A-4D1D-3A3D-FBF6-6871B83DD3ED" name="Katedra PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:59:16 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1B4A614-A498-ACBB-A2FE-1FEAD84FDB38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

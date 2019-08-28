@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F045B8D2-B09E-60E5-9CD1-3D805D5AAE57" name="PREDMETY_OBORU">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>82465F7E-147F-B6CE-02E9-857456B9A975</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDIJNI_OBOR_Id_Obor" id="B88FB6A1-075F-B8E3-3122-6BE8BC8FE95A">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>BC94B876-6614-5A14-7589-305F348A6A2E</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6264C134-9717-DA47-DDEB-5C1CC3F991C0" referredColumn="9DA3DF15-567B-8D12-856C-5CB739EA12EE"/>
+</associations>
+</Column>
+<Column name="PREDMET_Id_Predmet" id="00ED7632-CA59-50C3-FCF9-48F421AD5B90">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>6CD7D68F-8AEA-C21B-2CD9-E238D2A6CC74</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66F58E18-AEF3-615B-8BF3-9C7422131741" referredColumn="62F548B6-6B12-958F-DE59-57A58B1B9BA2"/>
+</associations>
+</Column>
+<Column name="KATEGORIE_Id_Kategorie" id="A8EE3F5A-C479-5E4C-551C-A81863A15B65">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>71EA0DE0-DC4D-E0D5-68FE-3319EDDB24C8</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="124E9124-2EBF-B8DA-4F82-87781368B369" referredColumn="EB64DCC9-0419-A294-856F-A004D25927B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70BB8F3F-D953-02EC-16EB-85F8D1281A56" name="PREDMETY_OBORU_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>A7A89832-682D-FE00-96D4-F9405637DE02</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="C2ED01F6-AA5A-7068-3E03-DE5444496A4D" name="PREDMETY_OBORU_PREDMET_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>EAF603C3-7EA9-57D6-8164-2075B84A3E83</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00ED7632-CA59-50C3-FCF9-48F421AD5B90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5F6D036-9FD3-1AB9-23F3-762A0EF345DC" name="PREDMETY_OBORU_KATEGORIE_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>54D7BEDD-5FCE-74D4-BF4C-85095332A9A1</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8EE3F5A-C479-5E4C-551C-A81863A15B65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92DD2BFC-FE94-60F6-C313-122B297728FB" name="PREDMETY_OBORU_STUDIJNI_OBOR_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>FBFB8950-E6E8-8042-DEBA-FADEECE374C5</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B88FB6A1-075F-B8E3-3122-6BE8BC8FE95A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

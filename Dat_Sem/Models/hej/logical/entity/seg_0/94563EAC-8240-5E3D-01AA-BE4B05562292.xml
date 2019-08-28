@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="94563EAC-8240-5E3D-01AA-BE4B05562292" name="ROZVRHOVA_AKCE">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:21:03 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Akce" id="ED434608-2469-C821-A6BC-9C3394B62CA4">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:21:12 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pocet_Hodin" id="607F29B1-2E81-9903-B627-D9A1C6B2C514">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:21:48 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Predmet" id="61E25DD3-7B44-6ABD-C3B5-3A61FE05C295">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:22:16 UTC</createdTime>
+<generatorID>2FB41174-76BC-3151-6D65-88D8EA5A657C</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>55E22509-F16E-2597-1870-AF998CE6038F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ucitele" id="E284B332-2262-8401-D160-28D250653371">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:22:22 UTC</createdTime>
+<generatorID>277508B1-3FCB-8BAA-FEEB-F909D8599259</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>5791AB52-6CB3-7D73-B5B2-C7DF5F927C03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Zpusobu" id="AA3D06B3-6CA4-F6F9-2C6F-52077DFE5941">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:18:34 UTC</createdTime>
+<generatorID>EBFC05BB-3763-212D-34A7-E31525810C70</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>298F7D9C-66D6-382A-A2A9-41EF2D83B14B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Od" id="94E72F47-9A09-6F6C-634D-159CD45F8A23">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-08 13:23:16 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Do" id="3A0CC16C-0E5E-50AD-60D0-58196572B515">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-08 13:24:27 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Den" id="0C1D206B-5C86-6F10-E4A4-C3A1AA126648">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-08 13:24:36 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03BAC3D4-EA1B-838F-C54F-E785CD936E3B" name="ROZVRHOVA_AKCE PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:21:34 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED434608-2469-C821-A6BC-9C3394B62CA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

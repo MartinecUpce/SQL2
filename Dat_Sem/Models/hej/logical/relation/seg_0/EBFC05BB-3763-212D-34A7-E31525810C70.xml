@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cisel_Typ" directorySegmentName="seg_0" id="EBFC05BB-3763-212D-34A7-E31525810C70">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:18:34 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<sourcePk>B9898DCC-C5CD-2B7E-7C6D-9950B6F15074</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>40D10A44-F9B3-C60D-C9AD-76319E38500C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>94563EAC-8240-5E3D-01AA-BE4B05562292</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

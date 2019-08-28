@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2661A25-59FD-9B2B-F702-5F73A1E6385C" name="ROZVRHOVA_AKCE">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>94563EAC-8240-5E3D-01AA-BE4B05562292</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Akce" id="A1107D65-B40B-B1C7-282F-E1F727957A75">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>ED434608-2469-C821-A6BC-9C3394B62CA4</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pocet_Hodin" id="BC4C6CCF-464E-9ABC-5AB4-A3C2E4FE8667">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>607F29B1-2E81-9903-B627-D9A1C6B2C514</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREDMET_Id_Predmet" id="14C80BC1-6912-F34A-FB39-27CD84B39F95">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>61E25DD3-7B44-6ABD-C3B5-3A61FE05C295</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47BCE2BF-8FB7-13DC-3BF3-A4CC1FF7D13A" referredColumn="62F548B6-6B12-958F-DE59-57A58B1B9BA2"/>
+</associations>
+</Column>
+<Column name="VYUCUJICI_Id_Ucitele" id="EEE9B292-CF17-3240-0050-979B3CF52D44">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>E284B332-2262-8401-D160-28D250653371</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="251786B8-A6FB-B859-CD66-133244349F6C" referredColumn="C5F78D0E-FF59-4F48-7C88-11969FC3B046"/>
+</associations>
+</Column>
+<Column name="ZPUSOB_VYUKY_Id_Zpusobu" id="AFF304AB-AA56-7C59-C21A-7A633F079E92">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>AA3D06B3-6CA4-F6F9-2C6F-52077DFE5941</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95CA3D69-48EA-626A-4A41-EEDC84570BE9" referredColumn="C551939E-4713-786B-8A45-3D5ACDE18D01"/>
+</associations>
+</Column>
+<Column name="Od" id="C90E775C-C598-07B6-0AC9-DE9DC72D177F">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>94E72F47-9A09-6F6C-634D-159CD45F8A23</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Do" id="81406840-953D-21C2-749D-83B80CAB3208">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>3A0CC16C-0E5E-50AD-60D0-58196572B515</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Den" id="A9C6B967-0BCD-EE5D-99BD-5EADE79D7C73">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>0C1D206B-5C86-6F10-E4A4-C3A1AA126648</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5CFB4E4-B531-9337-5D90-268B6C524BFA" name="ROZVRHOVA_AKCE_PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>03BAC3D4-EA1B-838F-C54F-E785CD936E3B</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1107D65-B40B-B1C7-282F-E1F727957A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="112DE3FC-C257-36BD-4160-B6CC11957787" name="ROZVRHOVA_AKCE_ZPUSOB_VYUKY_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>EBFC05BB-3763-212D-34A7-E31525810C70</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFF304AB-AA56-7C59-C21A-7A633F079E92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A80A6D3-7C1B-76AB-169C-6CE1BE587D38" name="ROZVRHOVA_AKCE_PREDMET_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>2FB41174-76BC-3151-6D65-88D8EA5A657C</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14C80BC1-6912-F34A-FB39-27CD84B39F95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCAACF33-3CEC-DBA9-7B33-9BCB7B2A7904" name="ROZVRHOVA_AKCE_VYUCUJICI_FK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-13 21:25:12 UTC</createdTime>
+<generatorID>277508B1-3FCB-8BAA-FEEB-F909D8599259</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEE9B292-CF17-3240-0050-979B3CF52D44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

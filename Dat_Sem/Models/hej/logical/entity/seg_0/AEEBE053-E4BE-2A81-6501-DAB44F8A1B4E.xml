@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AEEBE053-E4BE-2A81-6501-DAB44F8A1B4E" name="STUDIJNI_OBOR">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:50:39 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Obor" id="05C1F34E-5980-1478-D10A-E8A8630CA3D9">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:50:51 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Odhadovany_Pocet" id="EC11492F-E481-79E5-E2E7-2E16F1FF670B">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:14:48 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Katedry" id="A05DA6D4-B2FE-347C-86AC-AD1AEB1330EB">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:15:42 UTC</createdTime>
+<generatorID>710B12C8-3A13-713E-2286-0638FA39095F</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>A1B4A614-A498-ACBB-A2FE-1FEAD84FDB38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Formy" id="5B768337-85B2-AC84-41B9-1F62874DF804">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-03 12:41:54 UTC</createdTime>
+<generatorID>C3F8AFAC-E441-2A64-FEC7-ED50069D4E60</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>D0B4B118-3145-01DC-74C6-90696EFDA03D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C27CA433-027A-4331-C70B-8F4738FAE192" name="STUDIJNI_OBOR PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 09:50:53 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05C1F34E-5980-1478-D10A-E8A8630CA3D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82465F7E-147F-B6CE-02E9-857456B9A975" name="PREDMETY_OBORU">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:07:00 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Obor" id="BC94B876-6614-5A14-7589-305F348A6A2E">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:15:22 UTC</createdTime>
+<generatorID>FBFB8950-E6E8-8042-DEBA-FADEECE374C5</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>05C1F34E-5980-1478-D10A-E8A8630CA3D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Predmet1" id="6CD7D68F-8AEA-C21B-2CD9-E238D2A6CC74">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-08 13:15:25 UTC</createdTime>
+<generatorID>EAF603C3-7EA9-57D6-8164-2075B84A3E83</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>55E22509-F16E-2597-1870-AF998CE6038F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Kategorie1" id="71EA0DE0-DC4D-E0D5-68FE-3319EDDB24C8">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-08 13:15:38 UTC</createdTime>
+<generatorID>54D7BEDD-5FCE-74D4-BF4C-85095332A9A1</generatorID>
+<ownerDesignName>hej</ownerDesignName>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="true"/>
+</engineerTo>
+<referedAttribute>4BFD067B-5BE3-43EA-B62B-C72C5035DBEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7A89832-682D-FE00-96D4-F9405637DE02" name="KATEGORIE PK">
+<createdBy>Vojta</createdBy>
+<createdTime>2018-05-01 10:07:24 UTC</createdTime>
+<ownerDesignName>hej</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="876BA73F-4524-539A-130C-ED3113F797D6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>
